@@ -5,10 +5,7 @@ function xn1=mat_newton_raphson(F,J,xn,N,e1,e2,e3)
      
      xn1=xn+h;
      
-     xn=xn1
- 
- 
- 
+     
  
      
      
@@ -16,12 +13,14 @@ function xn1=mat_newton_raphson(F,J,xn,N,e1,e2,e3)
           break 
       end
      if abs(xn1-xn)<=e2        
-            
           break
       end
-     if abs((xn1-xn)/xn1)<=e3         
-          
+     if abs((xn1-xn)/xn1)<=e3       
           break
-      end
+     end
+      
+     
+     xn=xn1
  end
+ 
 end
