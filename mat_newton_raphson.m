@@ -13,7 +13,7 @@ function xn1=mat_newton_raphson(F,J,xn,N,e1,e2,e3)
   
   
   
-      
+  end
       
       if (abs(f(xn1))<=e1)       
            break 
