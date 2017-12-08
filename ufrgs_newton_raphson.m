@@ -7,7 +7,6 @@ function xn1= ufrgs_newton_raphson(F,J,xn,N,e1,e2,e3)
       h=J(xn)\(-F(xn));
       
       xn1=xn+h;
-    
       
       if norm(F(xn1))<=e1      
            break 
@@ -24,5 +23,6 @@ function xn1= ufrgs_newton_raphson(F,J,xn,N,e1,e2,e3)
       
       xn=xn1;
       p=xn;
+      
   end
  
